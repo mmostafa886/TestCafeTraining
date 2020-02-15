@@ -28,7 +28,7 @@ fixture`Payment Test`
     .beforeEach(helperFunctions.loginWithEnv);
 
     
-test.only('user can add new payment', async t => {
+test('user can add new payment', async t => {
     //Selectors
     const pay_bill_tab = Selector("#pay_bills_tab")
     const add_new_paye_tab = Selector('a').withText('Add New Payee')
